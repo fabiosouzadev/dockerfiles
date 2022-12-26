@@ -25,3 +25,8 @@ docker build -t {nome-da-imagem} .
 ```bash
 docker run --rm -it -v $(pwd):/usr/src/app -p 3000:3000 {node-da-imagem}
 ```
+Para criar o buid do [Dockerfile.prod](https://github.com/fabiosouzadev/dockerfiles/blob/main/node/Dockerfile.prod)
+
+```bash
+docker run --rm -it -v $(pwd):/usr/src/app -p 3000:3000 {node-da-imagem} -f Dockerfile.prod
+```
