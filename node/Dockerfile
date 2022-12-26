@@ -1,11 +1,9 @@
-FROM node:19-alpine
+FROM node:19
 
 WORKDIR /usr/src/app
 
 COPY . .
 
 EXPOSE 3000
-
-
 
 CMD ["node", "index.js"]
